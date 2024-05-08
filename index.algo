@@ -1,0 +1,23 @@
+ALGORITHM chaine
+VAR
+    str:string
+    a:INTEGER
+    b:INTEGER
+BEGIN
+a=1
+b=0
+length=0
+read(str)
+
+    FOR i 0 min TO str.length-1  STEP 1 DO
+    
+      IF (str[i]==" ") THEN
+        a=a+1
+        if(str[i]=="o"||"e"||"u"||"a"||"i") THEN
+        b=b+1
+        
+      END_IF
+      length=length+1
+    END_FOR
+    write(a,b)
+END
